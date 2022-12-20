@@ -44,5 +44,12 @@ class poss():
     def riskCP(self):
         return self.risk(2)    
    
-
-    
+    def replaceLowestValue(self):
+        lowestval = ""
+        charArr = [char for char in self.pos]
+        intArr = list(map(int,charArr))
+        intArr.sort()
+        intArr[len(intArr)-1] =1 
+        charArr = list(map(str,intArr))
+        str1 =" "
+        return str1.join(charArr)

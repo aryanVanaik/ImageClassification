@@ -17,6 +17,11 @@ comboArr = []
 for i in combos:
     comboArr.append(convertTuple(i))
 
-possObj = poss(comboArr[0])
-print(comboArr[0])
-print(possObj.countPointsNCP(0.03))
+possObj = poss("11123")
+
+print(possObj.replaceLowestValue())
+
+
+
+
+
