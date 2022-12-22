@@ -51,5 +51,21 @@ class poss():
         intArr.sort()
         intArr[len(intArr)-1] =1 
         charArr = list(map(str,intArr))
-        str1 =" "
+        str1 =""
         return str1.join(charArr)
+
+
+
+    def weightedAvg(self):
+        ctr0= self.countOccurance(0)
+        ctr1 =self.countOccurance(1)
+        ctr2=self.countOccurance(2)
+        ctr3=self.countOccurance(3)
+        ctr4=self.countOccurance(4)
+
+        return (0.2^ctr0) * (0.2^ctr1)* (0.2^ctr2)* (0.2^ctr3)* (0.2^ctr4)
+
+
+    def sum(self):
+        #return self.countPointsCP()*self.weightedAvg()/
+        pass
